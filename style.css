@@ -1,0 +1,2083 @@
+/*!
+Theme Name: likhun
+Theme URI: https://github.com/jilani53/likhun
+Author: Jilani Ahmed
+Author URI: https://banyanthemes.com/
+Description: Likhun is a single and multiple niche blog theme with light and dark modes. It is a very lightweight, semantic elements base SEO friendly WordPress blog theme. It has also an ajax category filter with pagination and a very popular post masonry style.
+Version: 1.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: likhun
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+likhun is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layouts
+# Components
+	- Navigation
+	- Posts and pages
+	- Comments
+	- Widgets
+	- Media
+	- Captions
+	- Galleries
+# plugins
+	- Jetpack infinite scroll
+# Utilities
+	- Accessibility
+	- Alignments
+
+--------------------------------------------------------------*/
+
+/* Color
+--------------------------------------------- 
+Primary color: #6caf17
+Primary hover color: #549006
+Secondary color: 
+*/
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Normalize
+--------------------------------------------- */
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+	 ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+	line-height: 27px;
+	-webkit-text-size-adjust: 100%;
+}
+
+/* Sections
+	 ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+	margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+	display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+	font-size: 48px;
+	margin: 15px 0;
+	color: #000000
+}
+
+/* Grouping content
+	 ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+	font-family: monospace, monospace;
+	font-size: 17px;
+}
+
+/* Text-level semantics
+	 ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+	background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+	border-bottom: none;
+	text-decoration: underline;
+	text-decoration: underline dotted;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+	font-family: monospace, monospace;
+	font-size: 17px;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+	font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/* Embedded content
+	 ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+	border-style: none;
+}
+
+/* Forms
+	 ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 27px;
+	margin: 0;
+	outline: none;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+	overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+	text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+	padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *		`fieldset` elements in all browsers.
+ */
+legend {
+	box-sizing: border-box;
+	color: inherit;
+	display: table;
+	max-width: 100%;
+	padding: 0;
+	white-space: normal;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+	vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+	overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+	-webkit-appearance: textfield;
+	outline-offset: -2px;
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	font: inherit;
+}
+
+/* Interactive
+	 ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+	display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+	display: list-item;
+}
+
+/* Misc
+	 ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+	display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+	display: none;
+}
+
+/* Box sizing
+--------------------------------------------- */
+
+/* Inherit box-sizing to more easily change it's value on a component level.
+@link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+/* Typography
+--------------------------------------------- */
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: #404040;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-size: 17px;
+	line-height: 27px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	font-weight: 800;
+    color: #000000;
+	margin-bottom: 15px;
+}
+
+p {
+	margin-bottom: 25px;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote:before{
+	position: absolute;
+    font-size: 19px;
+    font-family: 'bootstrap-icons';
+    content: "\F6B0";
+	font-weight: 900;
+    top: 0;
+    left: 0;
+}
+
+blockquote {
+    font-weight: 500;
+    color: #333333;
+    line-height: 30px;
+    border: 0;
+    padding: 0 0 0 30px;
+    position: relative;
+    font-style: italic;
+}
+
+blockquote i {
+	font-size: 35px;
+	color: #000000;
+	margin-bottom: 20px;
+	display: block;
+	text-align: center;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #eeeeee;
+	font-family: "Courier 10 Pitch", courier, monospace;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-family: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+/* Elements
+--------------------------------------------- */
+body {
+	background: #f6fafc;
+	font-size: 19px;
+	line-height: 31px
+}
+
+hr {
+	background-color: #cccccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul,
+ol {
+	margin: 0 0 25px 15px;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 25px;
+}
+
+dt {
+	font-weight: 700;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+figure {
+	margin: 1em 0;
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+/* Links
+--------------------------------------------- */
+a {
+	color: #000000;
+	text-decoration: none;
+	outline: none;
+	-webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+a:visited {
+	color: #000000;
+}
+
+a:hover,
+a:focus,
+a:active,
+.single-blog:hover a,
+.single-blog:focus a,
+.entry-meta a:hover,
+.entry-meta a:focus,
+.type-post:hover .entry-title a {
+	color: #6caf17;
+	outline: none;
+	border: 0
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
+/* Forms
+--------------------------------------------- */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.wp-block-search .wp-block-search__button,
+a.likhun-secondary,
+a.likhun-primary {
+	border: 0;
+    border-radius: 2px;
+    background: #6caf17;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 13px 28px;
+    outline: none;
+	text-decoration: none !important;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+a.likhun-secondary {
+	background: #404040;
+}
+
+button:hover,
+button:focus,
+input[type="button"]:hover,
+input[type="button"]:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+.wp-block-search .wp-block-search__button:hover,
+.wp-block-search .wp-block-search__button:focus,
+a.likhun-primary:focus,
+a.likhun-primary:hover {
+	background: #549006;
+}
+
+a.likhun-secondary:hover {
+	background: #000000
+}
+
+button:active,
+button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+	border-color: #000000;
+}
+
+.form-control,
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: #000000;
+	border: 1px solid #000000;
+	border-radius: 3px;
+	padding: 0 15px;
+	height: 52px;
+	margin-bottom: 30px;
+}
+
+.form-control:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+	color: #6caf17;
+	border-color: #6caf17;
+    box-shadow: 0 0 0 1px rgb(108,175,23);
+}
+
+select {
+    border: 1px solid #000000;
+    height: 45px;
+    padding: 0 10px;
+}
+
+textarea.form-control,
+textarea {
+	width: 100%;
+	height: auto;
+	padding: 15px
+}
+
+input[type=checkbox]:checked {
+    color: red;
+}
+input[type=checkbox], input[type=radio] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #000000;
+    background: #ffffff;
+    margin-bottom: -5px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+input[type=checkbox]:checked:after {
+    opacity: 1;
+}
+input[type=checkbox]:after {
+    content: "";
+    opacity: 0;
+    display: block;
+    left: 8px;
+    top: 3px;
+    position: absolute;
+    width: 7px;
+    height: 13px;
+    border: 2px solid #000000;
+    border-top: 0;
+    border-left: 0;
+    transform: rotate(45deg);
+}
+
+/* Search form style */
+form.search-form .search-field {
+    padding: 12px 15px;
+}
+.wp-block-search .wp-block-search__input {
+	margin-bottom: 0;
+}
+form.wp-block-search__button-outside.wp-block-search__text-button.wp-block-search {
+    background: #f5f5f5;
+    padding: 30px;
+    border-radius: 5px;
+}
+form.wp-block-search__button-outside.wp-block-search__text-button.wp-block-search label {
+	font-weight:  700;
+	margin-bottom: 15px;
+}
+
+form.search-form,
+form.post-password-form p {
+    display: flex;
+    align-items: center;
+}
+
+.likhun-sidebar .widget form.search-form {
+    margin-bottom: -30px;
+}
+
+form.search-form input[type="submit"],
+form.post-password-form p input[type="submit"] {
+    margin-top: -30px;
+    margin-left: 10px;
+}
+
+/* Table style */
+.wp-block-calendar {
+	margin: 30px 0;
+	width: 100%;
+}
+table a{
+	font-weight: 700
+}
+th,
+tr,
+td {
+	border: 1px solid #cccccc;
+	padding: 15px;
+}
+th,
+.wp-block-calendar table th {
+	font-weight: 700;
+}
+nav.wp-calendar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+.sticky-top {
+	top: 30px
+}
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+/* Navigation
+--------------------------------------------- */
+.main-navigation {
+	display: block;
+	width: 100%;
+}
+
+.main-navigation ul {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+.main-navigation ul ul {
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	float: left;
+	position: absolute;
+	top: 100%;
+	left: -999em;
+	z-index: 99999;
+}
+
+.main-navigation ul ul ul {
+	left: -999em;
+	top: 0;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+	display: block;
+	left: auto;
+}
+
+.main-navigation ul ul a {
+	width: 200px;
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+	left: auto;
+}
+
+.main-navigation li {
+	position: relative;
+}
+
+.main-navigation a {
+	display: block;
+	text-decoration: none;
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+.site-main .comment-navigation,
+.site-main
+.posts-navigation,
+.site-main
+.post-navigation {
+	margin: 0 0 1.5em;
+}
+
+.comment-navigation .nav-links,
+.posts-navigation .nav-links,
+.post-navigation .nav-links {
+	display: flex;
+	margin: 50px 0;
+    font-weight: 700;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	flex: 1 0 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	text-align: end;
+	flex: 1 0 50%;
+}
+
+.likhun-user-dashboard.dropdown.user-dashboard img {
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.likhun-user-dashboard.dropdown.user-dashboard a.dropdown-toggle {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.likhun-nav a.likhun-primary {
+    padding: 5px 20px;
+	margin-left: 30px;
+}
+
+article a.likhun-secondary,
+article a.likhun-primary {
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.likhun-nav a.likhun-primary svg {
+    width: 14px;
+    margin-top: -3px;
+}
+
+.likhun-ajax-filter ul.nav-filter {
+    list-style: disc;
+    margin: 0 0 50px 0;
+    padding: 0;
+}
+
+.likhun-ajax-filter ul.nav-filter.menu-hide {
+	display: none;
+}
+
+.likhun-ajax-filter ul.nav-filter li {
+    display: inline-block;
+    border: 1px solid #000000;
+    margin: 5px 5px 5px 0;
+    padding: 3px 10px;
+    border-radius: 3px;
+}
+
+.likhun-ajax-filter ul.nav-filter li.active a,
+.likhun-ajax-filter ul.nav-filter li.active{
+	background: #000000;
+	color: #ffffff
+}
+
+.likhun-ajax-filter .status {
+    margin-bottom: 50px;
+}
+
+/* Posts and pages
+--------------------------------------------- */
+.sticky {
+	display: block;
+	background: #ffffff;
+    border: 1px solid #dedede;
+	padding: 30px;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	position: relative
+}
+.sticky:before {
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	font-family: 'bootstrap-icons';
+    content: "\F58D";
+    font-size: 30px;
+    font-weight: 700;
+    color: #6caf17
+}
+
+.post,
+.page {
+	word-break: break-word;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+header.entry-header {
+    margin-bottom: 30px;
+}
+
+header.page-header.likhun-page-header {
+    padding: 100px 0;
+    background: #f5f5f5;
+    color: #000000;
+}
+
+header.likhun-page-header h1 {
+	color: #000000
+}
+
+header.page-header.likhun-page-header p {
+	margin-bottom: 0;
+}
+
+header.likhun-page-header h1 span {
+    text-transform: capitalize;
+	color: #6caf17;
+}
+
+.likhun-page-header .hero-banner {
+	text-align: right;
+}
+
+.likhun-page-header img.hero-right-banner {
+    max-width: 300px;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 30px 0;
+    overflow: hidden;
+}
+
+.sticky .entry-summary {
+    margin: 30px 0 0;
+}
+
+.page-content a,
+.entry-content a,
+.entry-summary a,
+.likhun-comment-body p a {
+	text-decoration: underline
+}
+
+.entry-content p.wp-block-cover-text {
+    color: #ffffff;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.entry-meta {
+    font-size: 16px;
+	text-transform: capitalize;
+}
+
+.entry-meta a {
+    font-weight: 600;
+	color: #818181;
+}
+
+/* Comments
+--------------------------------------------- */
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+ul.likhun-comment-depth {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.likhun-comment-body p {
+	margin-bottom: 15px
+}
+
+h3.comment-reply-title small {
+    float: right;
+}
+
+.likhun-comment-depth li.comment {
+    list-style: none;
+}
+
+.likhun-comment-list {
+    background: #f5f5f5;
+    margin-bottom: 30px;
+    border: 0;
+    padding: 30px;
+}
+
+.likhun-comment-body .avatar {
+    border-radius: 50%;
+}
+
+.likhun-comment-body .meta-date {
+    font-size: 15px;
+    font-weight: 600;
+    color: #6caf17;
+}
+
+.likhun-comment-body .author-meta {
+    text-transform: capitalize;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.likhun-comment-depth li.pingback a,
+ul.likhun-comment-depth li.trackback a,
+.likhun-comment-body .author-meta span {
+	font-weight: 500;
+}
+
+ul.likhun-comment-depth li.pingback,
+ul.likhun-comment-depth li.trackback {
+    list-style: none;
+}
+
+/* Widgets
+--------------------------------------------- */
+.widget {
+	margin: 0 0 40px;
+}
+
+.menu-testing-menu-container ul:nth-child(1),
+.widget ul:nth-child(2) {
+    margin-left: -12px;
+}
+
+.widget ul li {
+	margin: 10px 0
+}
+
+.widget select {
+	max-width: 100%;
+	border: 1px solid #cccccc;
+	height: 45px;
+	padding: 0 10px;
+}
+
+.widget h2,
+h3.comment-reply-title,
+h2.widgettitle {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 35px;
+    color: #000000;
+    padding: 15px 25px 15px 0;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+
+h2.widgettitle {
+	padding-top: 0
+}
+
+.widgettitle a.rsswidget {
+    display: inline-block
+}
+
+a.rsswidget {
+    display: block;
+	font-weight: 700;
+}
+
+span.rss-date {
+    font-size: 17px;
+}
+
+.rssSummary {
+    margin: 10px 0;
+}
+
+.likhun-sidebar {
+	padding-left: 30px;
+}
+
+.likhun-sidebar .tagcloud a {
+    font-size: 15px !important;
+    text-transform: capitalize;
+    border: 1px solid #000000;
+    padding: 0 10px;
+    margin: 3px 0;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+/* Media
+--------------------------------------------- */
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+	display: inline-block;
+}
+
+/* Captions
+--------------------------------------------- */
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+.post-thumbnail img,
+.blog-thumbnail img,
+.wp-block-image {
+    font-weight: 700;
+    text-align: center;
+	border: 1px solid #e7e7e7
+}
+
+.single .post-thumbnail,
+.single .wp-block-image{
+	border: 1px solid #e7e7e7
+}
+
+.wp-block-image figcaption {
+    margin-top: 16px;
+}
+
+/* Galleries
+--------------------------------------------- */
+.gallery {
+	margin-bottom: 1.5em;
+	display: grid;
+	grid-gap: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+.gallery-columns-2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery-columns-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-columns-4 {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery-columns-5 {
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.gallery-columns-6 {
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.gallery-columns-7 {
+	grid-template-columns: repeat(7, 1fr);
+}
+
+.gallery-columns-8 {
+	grid-template-columns: repeat(8, 1fr);
+}
+
+.gallery-columns-9 {
+	grid-template-columns: repeat(9, 1fr);
+}
+
+.gallery-caption {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+
+/* Jetpack infinite scroll
+--------------------------------------------- */
+
+/* Hide the Posts Navigation and the Footer when Infinite Scroll is in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+	display: none;
+}
+
+/* Re-display the Theme Footer when Infinite Scroll has reached its end. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+
+/* Accessibility
+--------------------------------------------- */
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 0.875rem;
+	font-weight: 700;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+}
+
+/* Do not show the outline on the skip link target. */
+#primary[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+/* Alignments
+--------------------------------------------- */
+.alignleft {
+
+	/*rtl:ignore*/
+	float: left;
+
+	/*rtl:ignore*/
+	margin-right: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.alignright {
+
+	/*rtl:ignore*/
+	float: right;
+
+	/*rtl:ignore*/
+	margin-left: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1.5em;
+}
+
+/*--------------------------------------------------------------
+# Main Body
+--------------------------------------------------------------*/
+.likhun-main-body {
+    margin: 100px 0;
+}
+
+/*--------------------------------------------------------------
+# Menu Sections 
+--------------------------------------------------------------*/
+.navbar.likhun-nav {
+	border-bottom: 1px solid #e4e2e2;
+}
+
+.navbar-brand img.likhun-logo {
+    max-height: 40px;
+}
+
+.navbar-brand img.likhun-logo.likhun-light {
+	display: none
+}
+
+.navbar-toggler:hover {
+	background: #ffffff;
+}
+
+.navbar-toggler:focus {
+	box-shadow: none;
+}
+
+.likhun-nav ul.social-icon {
+    list-style: none;
+    margin: 2px 0 0 0;
+}
+
+.logged-in .likhun-nav ul.social-icon {
+    list-style: none;
+    margin: 0;
+}
+
+/* Bootstrap alert customization
+--------------------------------------------- */
+.likhun-alert {
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    text-align: center;
+    background: #000000;
+    color: #f4b803;
+}
+
+.likhun-alert a.btn-close i{
+	padding: 21px;
+	color: #ffffff;
+	margin-left: -50px;
+}
+
+/* Top Countdown timer */
+#likhun-countdown {
+	font-weight: 700;
+}
+#likhun-countdown .sec,
+#likhun-countdown .min,
+#likhun-countdown .hour,
+#likhun-countdown .day {
+    font-size: 15px;
+    margin-right: 15px;
+	font-weight: 700;
+}
+
+ul.social-icon {
+    list-style: none;
+    margin: 3px 0 0 0;
+}
+
+ul.social-icon li {
+    display: inline-block;
+    line-height: 0;
+}
+
+ul.social-icon li i {
+    font-size: 30px;
+}
+
+ul.social-icon svg {
+    width: 18px;
+    margin: 0 5px;
+}
+
+/* Bootstrap menu customization
+--------------------------------------------- */
+.dropdown-toggle::after {
+	display: none
+}
+
+.dropdown.user-dashboard .dropdown-toggle::after {
+	display: inline-block;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #404040;
+    font-size: 17px;
+}
+
+.navbar-light .navbar-nav .active > .nav-link{
+	font-weight: 700
+}
+
+a.dropdown-item:hover,
+.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #6caf17
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    min-width: 250px;
+	margin-top: 10px
+}
+
+.dropdown-menu li{ 
+	position: relative;
+}
+
+.nav-item .submenu{ 
+	display: none;
+	position: absolute;
+	left: 100%; 
+	top: -7px;
+}
+
+.nav-item .submenu-left{ 
+	right: 100%; 
+	left: auto;
+}
+
+.likhun-user-dashboard.dropdown.user-dashboard li a:hover,
+.dropdown-menu > li:hover {
+    background-color: #ffffff;
+}
+
+.dropdown-menu > li:hover > .submenu{ 
+	display: block; 
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu .nav-link {
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.likhun-user-dashboard.dropdown.user-dashboard ul {
+	padding: 12px 0;
+	margin-top: 15px;
+}
+
+.likhun-user-dashboard.dropdown.user-dashboard li a {
+	font-weight: 500;
+    padding: 2px 20px;
+}
+
+/* Mega menu
+--------------------------------------------- */
+.has-mega-menu.dropdown {
+    position: static !important;
+}
+
+.navbar-expand-lg .navbar-nav .mega-menu-wrapper.dropdown-menu {
+    width: 100%;
+    max-width: unset;
+    padding: 15px;
+    margin-top: -1px;
+	border-radius: 0;
+}
+.mega-menu-wrapper .menu-single-item {
+	margin: 10px 0
+}
+
+.mega-menu-wrapper .menu-single-item h3 {
+    font-size: 17px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.mega-menu-wrapper .menu-single-item a {
+    display: block;
+    padding: 5px 0 !important;
+	font-weight: 600;
+}
+
+.mega-menu-wrapper .menu-single-item a:hover {
+	color: #6caf17
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+}
+
+/* Menu single item with thumbnail
+--------------------------------------------- */
+.thumbnail-item {
+    display: flex;
+    align-items: start
+}
+
+.thumbnail-item-left {
+    margin-right: 15px;
+}
+
+.thumbnail-item .thumbnail-item-left img {
+    max-height: 80px;
+	min-width: 80px;
+    border-radius: 3px;
+}
+
+.thumbnail-item-right h3,
+a.mega-menu-thumbnail-item {
+    font-size: 16px !important;
+    line-height: 23px !important;
+    font-weight: 700;
+    display: inline-block;
+}
+
+a.mega-menu-thumbnail-item {
+	margin: 15px 0;
+	padding: 15px !important;
+}
+
+a.mega-menu-thumbnail-item:hover {
+	background: #eff4f4 !important;
+	border-radius: 3px;
+}
+
+a.mega-menu-thumbnail-item:before {
+	content: none !important;
+}
+
+.thumbnail-item-right p {
+    font-size: 15px;
+    line-height: 23px;
+	font-weight: normal;
+	color: #000000;
+    margin-top: 3px;
+	margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Blog Post Style 
+--------------------------------------------------------------*/
+
+h1.page-title,
+h1.entry-title {
+    font-size: 46px;
+    line-height: 60px;
+    font-weight: 800;
+	margin-top: 0;
+}
+
+h2.entry-title {
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: 800;
+}
+
+/* Related Blog
+--------------------------------------------- */
+.popular-posts,
+.related-articles {
+    margin-top: 50px;
+    margin-bottom: -30px;
+    clear: both;
+}
+
+.popular-posts {
+    padding-bottom: 70px;
+    border-bottom: 1px solid #eeeeee;
+	margin-top: 0;
+    margin-bottom: 100px;
+}
+
+.title-left h2 {
+    font-weight: 800;
+    color: #000000;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.single-blog {
+    margin-bottom: 30px;
+    word-break: break-word;
+	align-items: center;
+}
+
+.blog-content a {
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.blog-content .pub-meta {
+    font-size: 15px;
+}
+
+.blog-content .pub-meta i {
+    color: #6caf17;
+}
+
+.blog-content .pub-author {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* Pagination
+--------------------------------------------- */
+.page-links,
+.likhun-pagination {
+	margin-top: 50px;
+}
+
+.likhun-pagination ul {
+	display: inline-flex;
+	padding: 0;
+	margin: 0;
+}
+
+a.page-numbers,
+span.page-numbers.current,
+.page-links a,
+.page-links b,
+.page-links a b,
+span.post-page-numbers.current,
+.likhun-pagination ul li span.page-numbers.current,
+.likhun-pagination ul li a.page-numbers {
+	color: #4a4a4a;
+	display: inline-block;
+	padding: 5px 15px;
+	border-radius: 3px;
+	background-color: #f5f5f5;
+	margin: 5px 1px;
+}
+
+span.page-numbers.current,
+.page-links b,
+span.post-page-numbers.current,
+.likhun-pagination ul li span.page-numbers.current {
+	background: transparent;
+	background-color: #6caf17;
+	color: #fff;
+}
+
+.likhun-pagination ul .page-item:last-child .page-link {
+	border: 0;
+}
+
+a.page-numbers:hover,
+a.page-numbers:focus,
+.page-links a:hover,
+.page-links a:focus,
+.page-links b:hover,
+.page-links b:focus,
+.likhun-pagination ul li a.page-numbers:focus,
+.likhun-pagination ul li a.page-numbers:hover {
+	background-color: #6caf17;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.likhun-ajax-filter ul.pagination {
+    margin: 0;
+    padding: 0;	
+}
+
+.likhun-ajax-filter .masonry-style ul.pagination {
+	position: absolute;
+    bottom: -50px;
+}
+
+.likhun-ajax-filter a.page-numbers {
+	margin: 5px 5px;
+}
+
+/* Menu Stiker
+--------------------------------------------- */
+.has-mega-menu .sticker-trendy:after,
+.has-mega-menu .sticker-new:after,
+.sticker-trendy.menu-item > a:after,
+.sticker-new.menu-item > a:after {
+    font-size: 11px;
+    line-height: 15px;
+    color: #ffffff;
+    background: #6caf17;
+    padding: 2px 5px;
+    border-radius: 3px;
+    content: "New";
+    margin-left: 5px;
+    top: 15px;
+    position: absolute;
+}
+.has-mega-menu .sticker-trendy:after,
+.sticker-trendy.menu-item > a:after {
+	background: #ff3008;
+    content: "Hot";
+}
+
+/* Masonry Style
+--------------------------------------------- */
+.masonry-style .post-thumbnail img {
+    margin-bottom: 30px;
+}
+.masonry-style h2.entry-title {
+    font-size: 23px;
+    line-height: 35px;
+    font-weight: 800;
+}
+
+/*--------------------------------------------------------------
+# Margin & Padding class / Base 30px
+--------------------------------------------------------------*/
+.margin-bottom-5x {
+	margin-bottom: 150px;
+}
+
+/*--------------------------------------------------------------
+# 404 Page
+--------------------------------------------------------------*/
+.error-404 {
+	text-align: center
+ }
+ 
+ .error-404 form {
+	 justify-content: center;
+	 margin-top: 50px;
+ }
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+footer.likhun-footer {
+    background: #f8f9fa;
+    clear: both;
+	border-top: 1px solid #dddddd;
+}
+
+.footer-top-section {
+    padding: 50px 0;
+}
+
+.footer-about img {
+    max-height: 50px;
+    margin-bottom: 30px;
+}
+
+.footer-about ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.footer-about ul li {
+    font-weight: 700;
+}
+
+.single-link h3 {
+    font-size: 19px;
+    font-weight: 700;
+	color: #000000;
+}
+
+.single-link ul {
+    list-style: none;
+    margin: 30px 0 0 0;
+    padding-left: 0;
+}
+
+.single-link li a {
+    padding: 5px 0;
+    display: block;
+}
+
+footer.entry-footer span {
+    display: block;
+    margin: 15px 0;
+    font-weight: 700;
+}
+
+footer.entry-footer span a {
+    font-weight: normal;
+}
+
+.footer-bottom {
+    padding: 30px 0;
+    clear: both
+}
+
+.footer-nav {
+    margin: 0;
+    padding: 0;
+	text-align: right;
+}
+
+.footer-nav li {
+    list-style: none;
+    display: inline-block;
+}
+
+.footer-nav li a {
+    padding: 0 10px;
+    color: #000000;
+}
+
+.footer-nav li a:hover {
+    color: #6caf17;
+}
+
+.backtotop {
+    margin-right: 50px;
+    font-size: 35px;
+}
+
+/*--------------------------------------------------------------
+# Plugin Customization
+--------------------------------------------------------------*/
+
+div#cerber-recaptcha {
+    margin-bottom: 30px;
+}
+
+.grid-sizer,
+.grid-item {
+	width: 50%;
+	float: left;
+	padding: 7.5px;
+}
+
+/*--------------------------------------------------------------
+# Likhun Theme Dark Mode Style
+--------------------------------------------------------------*/
+.mode-switcher i {
+    font-size: 25px;
+    line-height: 39px;
+    margin: 0 0 0 25px;
+    color: #d0ae03;
+    cursor: pointer;
+}
+
+.logged-in .mode-switcher i {
+    line-height: 32px;
+	margin: 0 25px;
+}
+
+.mode-switcher i.bi-moon {
+    font-size: 20px;
+    line-height: 35px;
+}
+
+body.likhun-dark {
+	background: #181818;
+	color: #e6e6e6;
+}
+
+.likhun-dark .navbar-brand img.likhun-logo.likhun-dark {
+	display: none
+}
+
+.likhun-dark .navbar-brand img.likhun-logo.likhun-light {
+	display: block
+}
+
+.likhun-dark h1, 
+.likhun-dark h2, 
+.likhun-dark h3, 
+.likhun-dark h4, 
+.likhun-dark h5, 
+.likhun-dark h6,
+.likhun-dark a,
+.likhun-dark .footer-nav li a,
+.likhun-dark .wp-block-calendar table caption, 
+.likhun-dark .wp-block-calendar table tbody,
+.likhun-dark .form-control, 
+.likhun-dark input[type="text"], 
+.likhun-dark input[type="email"], 
+.likhun-dark input[type="url"], 
+.likhun-dark input[type="password"], 
+.likhun-dark input[type="search"], 
+.likhun-dark input[type="number"], 
+.likhun-dark input[type="tel"], 
+.likhun-dark input[type="range"], 
+.likhun-dark input[type="date"], 
+.likhun-dark input[type="month"], 
+.likhun-dark input[type="week"], 
+.likhun-dark input[type="time"], 
+.likhun-dark input[type="datetime"], 
+.likhun-dark input[type="datetime-local"], 
+.likhun-dark input[type="color"], 
+.likhun-dark textarea,
+.likhun-dark blockquote,
+.likhun-dark .navbar-light .navbar-nav .nav-link {
+    color: #e6e6e6;
+}
+
+.likhun-dark .likhun-ajax-filter ul.nav-filter li.active a,
+.likhun-dark a:hover,
+.likhun-dark .navbar-light .navbar-nav .nav-link:hover {
+	color: #6caf17;
+}
+
+.likhun-dark .navbar-light .navbar-brand,
+.likhun-dark .likhun-ajax-filter a.page-numbers:hover,
+.likhun-dark a.post-page-numbers:hover,
+.likhun-dark a.page-numbers:hover,
+.likhun-dark button:hover, 
+.likhun-dark .likhun-nav .navbar-toggler,
+.likhun-dark input[type="button"]:hover, 
+.likhun-dark input[type="reset"]:hover, 
+.likhun-dark input[type="submit"]:hover, 
+.likhun-dark .wp-block-search .wp-block-search__button:hover, 
+.likhun-dark a.likhun-primary:hover,
+.likhun-dark .widget h2, 
+.likhun-dark h3.comment-reply-title, 
+.likhun-dark h2.widgettitle,
+.likhun-dark header.page-header.likhun-page-header,
+.likhun-dark .title-left h2,
+.likhun-dark header.likhun-page-header h1 {
+	color: #ffffff;
+}
+
+.likhun-dark .sticky,
+.likhun-dark .wp-block-table.is-style-stripes tbody tr:nth-child(odd),
+.likhun-dark pre,
+.likhun-dark .likhun-nav .navbar-toggler,
+.likhun-dark footer.likhun-footer,
+.likhun-dark form.wp-block-search__button-outside.wp-block-search__text-button.wp-block-search,
+.likhun-dark .wp-block-calendar table th, 
+.likhun-dark input[type=checkbox], 
+.likhun-dark input[type=radio],
+.likhun-dark .form-control,
+.likhun-dark .likhun-comment-list,
+.likhun-dark header.page-header.likhun-page-header {
+    background: #252525;
+    background-color: #252525;
+}
+
+.likhun-dark .dropdown-menu {
+    background-color: #181818;
+}
+
+.likhun-dark .likhun-user-dashboard.dropdown.user-dashboard li a:hover, 
+.likhun-dark .dropdown-menu > li:hover {
+    background-color: transparent;
+}
+
+.likhun-dark th, 
+.likhun-dark tr, 
+.likhun-dark td,
+.likhun-dark .sticky,
+.likhun-dark footer.likhun-footer,
+.likhun-dark .likhun-sidebar .tagcloud a,
+.likhun-dark .likhun-nav .navbar-toggler,
+.likhun-dark .dropdown-menu,
+.likhun-dark .post-thumbnail img,
+.likhun-dark .blog-thumbnail img,
+.likhun-dark.single .wp-block-image,
+.likhun-dark.single .post-thumbnail,
+.likhun-dark .wp-block-calendar tbody td, .wp-block-calendar th,
+.likhun-dark .likhun-ajax-filter ul.nav-filter li {
+	border: 1px solid #3c3c3c;
+}
+
+.likhun-dark .navbar.likhun-nav,
+.likhun-dark .popular-posts,
+.likhun-dark .title-left h2 {
+    border-bottom: 1px solid #3c3c3c;
+}
+
+.likhun-dark input[type=radio]:after,
+.likhun-dark input[type=checkbox]:after {
+    border-color: #a5a5a5;
+}
+
+.likhun-dark .likhun-ajax-filter a.page-numbers,
+.likhun-dark a.post-page-numbers {
+    color: #404040;
+    text-decoration: none;
+}

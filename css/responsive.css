@@ -1,0 +1,73 @@
+/*
+* Likhun responsive file
+*/
+
+@media screen and ( max-width: 991px ) {
+    .navbar-nav {
+        margin-bottom: 30px;
+    }
+    .navbar-collapse {
+        padding: 30px 0;
+        border-top: 1px solid #e9e9e9;
+        margin-top: 5px;
+    }
+    .likhun-dark .navbar-collapse {
+        border-top: 1px solid #3c3c3c;
+    }
+    .nav-item .submenu {
+        left: 30px;
+        top: 30px;
+    }
+    .nav-item .submenu{ 
+		left: 30px; 
+		top: 40px;
+	}
+	.nav-item .submenu-left{ 
+		right: 30px; 
+		left: auto;
+	}
+	.dropdown-menu > li:hover{ 
+		background-color: #f1f1f1 
+	}
+	.dropdown-menu > li:hover > .submenu{ 
+		display: block; 
+	}
+    .likhun-sidebar {
+        padding-left: 0;
+    }
+}
+
+@media screen and ( max-width: 767px ) { 
+    .likhun-sidebar {
+        margin-top: 70px;
+    }
+    .likhun-page-header .hero-banner {
+        text-align: left;
+    }
+    .footer-nav {
+        text-align: left;
+        margin-top: 15px;
+    }
+    .footer-essential-links .single-link {
+        margin-top: 50px;
+    }
+    .related-articles .blog-thumbnail,
+    .popular-posts .blog-thumbnail {
+        margin-bottom: 30px;
+    }
+    ul.social-icon {
+        padding-left: 0;
+    }
+}
+
+@media screen and ( max-width: 480px ) {
+    .nav-item .submenu {
+        left: 15px;
+    }
+}
+
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+}

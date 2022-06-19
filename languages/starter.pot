@@ -1,0 +1,436 @@
+# Copyright (C) 2020 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: _s 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/_s\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-06-19 07:24+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: Poedit 3.0\n"
+"X-Domain: _s\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__;esc_attr__;_x\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: author.php:24
+#, php-format
+msgid "About: %s"
+msgstr ""
+
+#: comments.php:29
+msgid "Post a Comment"
+msgstr ""
+
+#: comments.php:30
+#, php-format
+msgid "Post a Reply to %s"
+msgstr ""
+
+#: comments.php:31
+msgid "Cancel Reply"
+msgstr ""
+
+#: comments.php:32
+msgid "Post Comment"
+msgstr ""
+
+#: comments.php:36
+msgid "Write your comment here..."
+msgstr ""
+
+#: comments.php:47
+msgid "Name"
+msgstr ""
+
+#: comments.php:53
+msgid "Email"
+msgstr ""
+
+#: comments.php:68 comments.php:92
+msgid " Comment "
+msgstr ""
+
+#: comments.php:68 comments.php:92
+msgid " Comments "
+msgstr ""
+
+#: comments.php:122
+msgid "(Edit)"
+msgstr ""
+
+#: comments.php:146
+msgid "Reply"
+msgstr ""
+
+#: functions.php:53
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:58
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:143
+msgid "on"
+msgstr ""
+
+#: header.php:149
+msgid "Get Started"
+msgstr ""
+
+#: inc/breadcrumbs.php:11
+msgid "Home "
+msgstr ""
+
+#: inc/breadcrumbs.php:181 inc/breadcrumbs.php:185 inc/breadcrumbs.php:189
+#: inc/breadcrumbs.php:196 inc/breadcrumbs.php:200 inc/breadcrumbs.php:205
+msgid "Archives"
+msgstr ""
+
+#: inc/breadcrumbs.php:216
+msgid "Author:"
+msgstr ""
+
+#: inc/breadcrumbs.php:221
+msgid "Page"
+msgstr ""
+
+#: inc/breadcrumbs.php:226
+msgid "Search results for: "
+msgstr ""
+
+#: inc/breadcrumbs.php:231
+msgid "Error 404"
+msgstr ""
+
+#: inc/customizer.php:61
+msgid "Light Logo"
+msgstr ""
+
+#: inc/customizer.php:84
+msgid "Sticky Logo"
+msgstr ""
+
+#: inc/customizer.php:105
+msgid "Google font show/hide"
+msgstr ""
+
+#: inc/customizer.php:109
+msgid "Default Font ( Recommended for better performance )"
+msgstr ""
+
+#: inc/customizer.php:110
+msgid "Google Font"
+msgstr ""
+
+#: inc/customizer.php:128
+msgid "Input google font. Ex: \"Inter:wght@100;200;300;400;500;600;700;800;900&display=swap\""
+msgstr ""
+
+#: inc/customizer.php:146
+msgid "Input google font family."
+msgstr ""
+
+#: inc/customizer.php:164
+msgid "Body line height"
+msgstr ""
+
+#: inc/customizer.php:178
+msgid "Likhun Header"
+msgstr ""
+
+#: inc/customizer.php:179
+msgid "Change header elements."
+msgstr ""
+
+#: inc/customizer.php:185
+msgid "Top Alert"
+msgstr ""
+
+#: inc/customizer.php:202
+msgid "Top Deal Alert Text"
+msgstr ""
+
+#: inc/customizer.php:220
+msgid "Alert Show/Hide"
+msgstr ""
+
+#: inc/customizer.php:224 inc/customizer.php:322 inc/customizer.php:463
+#: inc/customizer.php:656 inc/customizer.php:678
+msgid "Show"
+msgstr ""
+
+#: inc/customizer.php:225 inc/customizer.php:323 inc/customizer.php:464
+#: inc/customizer.php:657 inc/customizer.php:679
+msgid "Hide"
+msgstr ""
+
+#: inc/customizer.php:241
+msgid "Date Schedule"
+msgstr ""
+
+#: inc/customizer.php:249
+msgid "Top Menu Information"
+msgstr ""
+
+#: inc/customizer.php:266
+msgid "Button text"
+msgstr ""
+
+#: inc/customizer.php:267
+msgid "Main menu right button text."
+msgstr ""
+
+#: inc/customizer.php:283
+msgid "Button url"
+msgstr ""
+
+#: inc/customizer.php:284
+msgid "Main menu right button url."
+msgstr ""
+
+#: inc/customizer.php:300
+msgid "Social Settings"
+msgstr ""
+
+#: inc/customizer.php:319
+msgid "Social Show/Hide"
+msgstr ""
+
+#: inc/customizer.php:339
+msgid "Facebook url"
+msgstr ""
+
+#: inc/customizer.php:355
+msgid "Twitter url"
+msgstr ""
+
+#: inc/customizer.php:371
+msgid "Linkedin url"
+msgstr ""
+
+#: inc/customizer.php:387
+msgid "Youtube url"
+msgstr ""
+
+#: inc/customizer.php:403
+msgid "Dribbble url"
+msgstr ""
+
+#: inc/customizer.php:417
+msgid "Likhun Settings"
+msgstr ""
+
+#: inc/customizer.php:418 inc/customizer.php:819
+msgid "Several settings pertaining likhun theme"
+msgstr ""
+
+#: inc/customizer.php:424
+msgid "Global Settings"
+msgstr ""
+
+#: inc/customizer.php:441
+msgid "Post Settings"
+msgstr ""
+
+#: inc/customizer.php:460
+msgid "Masonry Excerpt Show/Hide"
+msgstr ""
+
+#: inc/customizer.php:472
+msgid "Home Page Settings"
+msgstr ""
+
+#: inc/customizer.php:489
+msgid "Hero Section Settings"
+msgstr ""
+
+#: inc/customizer.php:507
+msgid "Hero Main Title"
+msgstr ""
+
+#: inc/customizer.php:523
+msgid "Hero Sub Title"
+msgstr ""
+
+#: inc/customizer.php:543
+msgid "Hero Right Banner"
+msgstr ""
+
+#: inc/customizer.php:561
+msgid "Trending Section Settings"
+msgstr ""
+
+#: inc/customizer.php:579
+msgid "Popular Post Title"
+msgstr ""
+
+#: inc/customizer.php:596 inc/customizer.php:756
+msgid "Maximum Post Show"
+msgstr ""
+
+#: inc/customizer.php:612
+msgid "Ajax Section Settings"
+msgstr ""
+
+#: inc/customizer.php:631
+msgid "Ajax Content Style"
+msgstr ""
+
+#: inc/customizer.php:634 inc/customizer.php:803
+msgid "Default Style"
+msgstr ""
+
+#: inc/customizer.php:635 inc/customizer.php:804
+msgid "Masonry Style"
+msgstr ""
+
+#: inc/customizer.php:653
+msgid "Ajax Category Menu  Show/Hide"
+msgstr ""
+
+#: inc/customizer.php:675
+msgid "Ajax Load Status Show/Hide"
+msgstr ""
+
+#: inc/customizer.php:696
+msgid "Maximum Ajax Post Show"
+msgstr ""
+
+#: inc/customizer.php:704
+msgid "Single Page Settings"
+msgstr ""
+
+#: inc/customizer.php:721
+msgid "Related Article Settings"
+msgstr ""
+
+#: inc/customizer.php:739
+msgid "Related Post Title"
+msgstr ""
+
+#: inc/customizer.php:764
+msgid "Archive Settings"
+msgstr ""
+
+#: inc/customizer.php:781
+msgid "Archive Post Settings"
+msgstr ""
+
+#: inc/customizer.php:800
+msgid "Archive Content Style"
+msgstr ""
+
+#: inc/customizer.php:818
+msgid "Likhun Footer"
+msgstr ""
+
+#: inc/customizer.php:825
+msgid "Footer Information"
+msgstr ""
+
+#: inc/customizer.php:842
+msgid "Copyright text"
+msgstr ""
+
+#: inc/template-functions.php:186 inc/template-functions.php:212
+#: inc/template-functions.php:319 inc/template-functions.php:336
+msgid " min read"
+msgstr ""
+
+#: inc/template-functions.php:231
+msgid "No related post."
+msgstr ""
+
+#: inc/template-functions.php:355
+msgid "No trending post."
+msgstr ""
+
+#: inc/template-functions.php:387
+msgid "Prev"
+msgstr ""
+
+#: inc/template-functions.php:388
+msgid "Next"
+msgstr ""
+
+#: inc/template-functions.php:409
+msgid "Permission denied"
+msgstr ""
+
+#: inc/template-functions.php:416
+msgid "Something is wrong, please try again later ..."
+msgstr ""
+
+#: inc/template-functions.php:435
+msgid "Term doesn't exist"
+msgstr ""
+
+#: inc/template-functions.php:509
+msgid "No posts found"
+msgstr ""
+
+#: inc/template-tags.php:63
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:66
+#, php-format
+msgid "Posted in: %1$s"
+msgstr ""
+
+#: inc/template-tags.php:73
+#, php-format
+msgid "Tagged: %1$s"
+msgstr ""
+
+#: inc/template-tags.php:83
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:100
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/widget.php:17
+msgid "Sidebar"
+msgstr ""
+
+#: inc/widget.php:19
+msgid "Sidebar position."
+msgstr ""
+
+#: search.php:20
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: single.php:36
+msgid "Previous:"
+msgstr ""
+
+#: single.php:37
+msgid "Next:"
+msgstr ""
+
+#: template-parts/content-none.php:24
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-page.php:25 template-parts/content.php:53
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content.php:40
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
