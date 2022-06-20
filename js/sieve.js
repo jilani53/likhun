@@ -7,6 +7,7 @@
 ;(function($) {
  
 	$('#container-async').on('click', 'a[data-filter], .pagination a', function(e) {
+		
 		if(e.preventDefault) { 
 			e.preventDefault(); 
 		}

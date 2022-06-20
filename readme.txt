@@ -23,6 +23,9 @@ Description
 
 == Changelog ==
 
+= 1.1 =
+* Fixed Data Sanitization/Escaping issues
+
 = 1.0 =
 * Initial release
 
