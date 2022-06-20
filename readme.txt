@@ -35,8 +35,8 @@ Description
 * normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2018 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
 
 == Copyright ==
-Leopard WordPress theme, Copyright 2022 leopard
-Leopard is distributed under the terms of the GNU GPLv2 or later
+Likhun WordPress theme, Copyright 2022 likhun
+Likhun is distributed under the terms of the GNU GPLv2 or later
 
 == Resources ==
 = Libraries =
