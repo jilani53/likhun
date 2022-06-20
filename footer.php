@@ -19,7 +19,7 @@ if( get_theme_mod('copy_text') ):
 				<div class="footer-bottom">
 					<div class="row">
 						<div class="col-md-5">
-							<?php echo wp_kses( get_theme_mod('copy_text'), 'allowed_html' ); ?>
+							<?php echo wpautop( likhun_allowed_html( get_theme_mod('copy_text') )); ?>
 						</div>
 						<div class="col-md-7">
 							<?php /* Footer navigation */

@@ -51,24 +51,6 @@
 		} // End countdown timer
 
 		/**
-		 * Set se for alert messages
-		 */			
-		 if( $.cookie ){
-			$('.likhun-alert').on( 'click', function( e ){
-				// Do not perform default action when button is clicked
-				e.preventDefault();	
-				/* If you just want the cookie for a session don't provide an expires ( expires: 1,  )
-				Set the path as root, so the cookie will be valid across the whole site */
-				$.cookie('likhun-alert', 'closed', { path: '/' });	
-			});
-		
-			// Check if alert has been closed
-			if( $.cookie('likhun-alert') === 'closed' ){	
-				$('.alert').hide();	
-			}
-		}
-
-		/**
 		 * Scroll to top button
 		 */
 		var scrolltotop={

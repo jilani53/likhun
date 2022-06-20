@@ -10,13 +10,6 @@
 get_header();
 
 /**
- * Page view count
- */
-if ( function_exists( 'likhun_post_view_count_func' ) ){
-    likhun_post_view_count_func( get_the_ID() );
-}
-
-/**
  * Single page layout meta
  */
 ?>

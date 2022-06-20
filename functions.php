@@ -176,7 +176,7 @@ function likhun_scripts() {
 
 	// Theme Google fonts
 	if( get_theme_mod( 'display_font' ) == 2 ):
-		wp_enqueue_style( 'likhunt-fonts', likhun_fonts_url(), array(), null );
+		wp_enqueue_style( 'likhun-fonts', likhun_fonts_url(), array(), null );
 	endif;
 	
 	// Main & RTL Stylesheet
@@ -194,11 +194,6 @@ function likhun_scripts() {
 	
 	// Masonry Script
 	wp_enqueue_script( 'masonry', get_template_directory_uri() . 'masonry.pkgd.min.js', array( 'jquery' ), LIKHUN_VERSION, true );
-
-	// Cookie js
-	if( get_theme_mod( 'alert_show' ) == 1 ):
-		wp_enqueue_script( 'jquery-cookie', get_template_directory_uri() . '/js/cookie.js', array( 'jquery' ), LIKHUN_VERSION, true );
-	endif;
 
 	// Smooth Scrool Script
 	wp_enqueue_script( 'smoothscroll', get_template_directory_uri() . '/js/smoothscroll.js', array( 'jquery' ), LIKHUN_VERSION, true );
@@ -232,8 +227,8 @@ function likhun_scripts() {
 	if ( ! empty( $google_font_family ) && ! empty( $line_height ) &&  2 == get_theme_mod( 'display_font' ) ) {
 		$custom_css .= '
 			body { 
-				font-family: ' . $google_font_family .'
-				line-height: ' . $line_height .'px
+				font-family: ' . esc_attr( $google_font_family ).'
+				line-height: ' . esc_attr( $line_height ).'px
 			}
 		';
 	}
@@ -258,7 +253,7 @@ require get_template_directory() . '/inc/template-tags.php';
 /**
  * Functions which enhance the theme by hooking into WordPress.
  */
-require get_template_directory() . '/inc/template-functions.php';
+require_once get_template_directory() . '/inc/template-functions.php';
 
 /**
  * Customizer additions.

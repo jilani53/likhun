@@ -46,7 +46,7 @@ function likhun_breadcrumbs() {
                 $post_type_archive = get_post_type_archive_link($post_type);
               
                 if( isset($post_type_object) ){
-                    echo '<li class="item-cat item-custom-post-type-' . esc_attr( $post_type ) . '"><a class="bread-cat bread-custom-post-type-' . esc_attr( $post_type ) . '" href="' . esc_url( $post_type_archive ) . '">' . wp_kses( $post_type_object->labels->name, 'allowed_html' ) . '</a></li>';
+                    echo '<li class="item-cat item-custom-post-type-' . esc_attr( $post_type ) . '"><a class="bread-cat bread-custom-post-type-' . esc_attr( $post_type ) . '" href="' . esc_url( $post_type_archive ) . '">' . wpautop( likhun_allowed_html( $post_type_object->labels->name )) . '</a></li>';
                     echo '<li class="separator"> ' . esc_html( $separator ) . ' </li>';
                 }
             }
@@ -65,7 +65,7 @@ function likhun_breadcrumbs() {
                 $post_type_object = get_post_type_object( $post_type );
                 $post_type_archive = get_post_type_archive_link( $post_type ) ;
               
-                echo '<li class="item-cat item-custom-post-type-' . esc_attr( $post_type ) . '"><a class="bread-cat bread-custom-post-type-' . esc_attr( $post_type ) . '" href="' . esc_url( $post_type_archive ) . '">' . wp_kses( $post_type_object->labels->name, 'allowed_html' ) . '</a></li>';
+                echo '<li class="item-cat item-custom-post-type-' . esc_attr( $post_type ) . '"><a class="bread-cat bread-custom-post-type-' . esc_attr( $post_type ) . '" href="' . esc_url( $post_type_archive ) . '">' . wpautop( likhun_allowed_html( $post_type_object->labels->name )) . '</a></li>';
                 echo '<li class="separator"> ' . esc_html( $separator ) . ' </li>';
               
             }
@@ -85,8 +85,8 @@ function likhun_breadcrumbs() {
                 // Loop through parent categories and store in variable $cat_display
                 $cat_display = '';
                 foreach($cat_parents as $parents) {
-                    $cat_display .= '<li class="item-cat">'. wp_kses( $parents, 'allowed_html' ) .'</li>';
-                    $cat_display .= '<li class="separator"> ' . wp_kses( $separator, 'allowed_html' ) . ' </li>';
+                    $cat_display .= '<li class="item-cat">'. wpautop( likhun_allowed_html( $parents )) .'</li>';
+                    $cat_display .= '<li class="separator"> ' . wpautop( likhun_allowed_html( $separator )) . ' </li>';
                 }
              
             }
@@ -105,7 +105,7 @@ function likhun_breadcrumbs() {
               
             // Check if the post is in a category
             if(!empty($last_category)) {
-                echo wp_kses( $cat_display, 'allowed_html' );
+                echo wpautop( likhun_allowed_html( $cat_display ));
                 echo '<li class="item-current item-' . esc_attr( $post->ID ) . '"><span class="bread-current bread-' . esc_attr( $post->ID ) . '">' . get_the_title() . '</span></li>';
                   
             // Else if post is in a custom taxonomy
@@ -145,7 +145,7 @@ function likhun_breadcrumbs() {
                 }
                    
                 // Display parent pages
-                echo wp_kses( $parents, 'allowed_html' );
+                echo wpautop( likhun_allowed_html( $parents ));
                    
                 // Current page
                 echo '<li class="item-current item-' . esc_attr( $post->ID ) . '"><span> ' . get_the_title() . '</span></li>';

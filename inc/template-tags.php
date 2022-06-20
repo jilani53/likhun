@@ -171,6 +171,6 @@ endif;
  * @return string (Maybe) modified "read more" excerpt string.
  */
 function likhun_excerpt_more( $more ) {
-    return ' ...';
+    if ( is_admin() ) return $more;
 }
 add_filter( 'excerpt_more', 'likhun_excerpt_more' );

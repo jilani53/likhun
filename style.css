@@ -4,7 +4,7 @@ Theme URI: https://github.com/jilani53/likhun
 Author: Jilani Ahmed
 Author URI: https://banyanthemes.com/
 Description: Likhun is a single and multiple niche blog theme with light and dark modes. It is a very lightweight, semantic elements base SEO friendly WordPress blog theme. It has also an ajax category filter with pagination and a very popular post masonry style.
-Version: 1.0
+Version: 1.1
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -1441,6 +1441,10 @@ span.rss-date {
     color: #f4b803;
 }
 
+.likhun-alert p {
+	margin: 0
+}
+
 .likhun-alert a.btn-close i{
 	padding: 21px;
 	color: #ffffff;
@@ -1756,6 +1760,7 @@ a.page-numbers:focus,
 .page-links a:focus,
 .page-links b:hover,
 .page-links b:focus,
+.likhun-dark .likhun-pagination ul li a.page-numbers:hover,
 .likhun-pagination ul li a.page-numbers:focus,
 .likhun-pagination ul li a.page-numbers:hover {
 	background-color: #6caf17;
@@ -1972,6 +1977,7 @@ body.likhun-dark {
 .likhun-dark h5, 
 .likhun-dark h6,
 .likhun-dark a,
+.likhun-dark .likhun-pagination ul li a.page-numbers,
 .likhun-dark .footer-nav li a,
 .likhun-dark .wp-block-calendar table caption, 
 .likhun-dark .wp-block-calendar table tbody,
@@ -1999,6 +2005,8 @@ body.likhun-dark {
 
 .likhun-dark .likhun-ajax-filter ul.nav-filter li.active a,
 .likhun-dark a:hover,
+.likhun-dark a:focus,
+.likhun-dark .navbar-light .navbar-nav .nav-link:focus,
 .likhun-dark .navbar-light .navbar-nav .nav-link:hover {
 	color: #6caf17;
 }
@@ -2009,9 +2017,14 @@ body.likhun-dark {
 .likhun-dark a.page-numbers:hover,
 .likhun-dark button:hover, 
 .likhun-dark .likhun-nav .navbar-toggler,
+.likhun-dark input[type="button"]:focus, 
+.likhun-dark input[type="reset"]:focus, 
+.likhun-dark input[type="submit"]:focus,
 .likhun-dark input[type="button"]:hover, 
 .likhun-dark input[type="reset"]:hover, 
 .likhun-dark input[type="submit"]:hover, 
+.likhun-dark .wp-block-search .wp-block-search__button:focus, 
+.likhun-dark a.likhun-primary:focus,
 .likhun-dark .wp-block-search .wp-block-search__button:hover, 
 .likhun-dark a.likhun-primary:hover,
 .likhun-dark .widget h2, 
@@ -2023,6 +2036,7 @@ body.likhun-dark {
 	color: #ffffff;
 }
 
+.likhun-dark .likhun-pagination ul li a.page-numbers,
 .likhun-dark .sticky,
 .likhun-dark .wp-block-table.is-style-stripes tbody tr:nth-child(odd),
 .likhun-dark pre,
@@ -2043,6 +2057,8 @@ body.likhun-dark {
     background-color: #181818;
 }
 
+.likhun-dark .likhun-user-dashboard.dropdown.user-dashboard li a:focus, 
+.likhun-dark .dropdown-menu > li:focus,
 .likhun-dark .likhun-user-dashboard.dropdown.user-dashboard li a:hover, 
 .likhun-dark .dropdown-menu > li:hover {
     background-color: transparent;

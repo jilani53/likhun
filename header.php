@@ -23,17 +23,19 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
+<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'likhun' ); ?></a>
+
 <!-- Main Body -->
 <div class="likhun-header-container">
 
 	<!-- Header Alert -->
 	<?php if( get_theme_mod( 'alert_show' ) == 1 ): ?>
 		<div class="likhun-alert alert alert-warning alert-dismissible fade show" role="alert">
-			<?php echo wp_kses_post( get_theme_mod( 'alert_text' ) ); ?>
+			<?php echo wpautop( likhun_allowed_html( get_theme_mod( 'alert_text' ) )); ?>
 			<?php if( get_theme_mod( 'offer_schedule' ) ): ?>
 				<div id="likhun-countdown" offerDate="<?php echo esc_attr( get_theme_mod( 'offer_schedule' )); ?>"></div>
 			<?php endif; ?>
-			<a type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"><i class="bi bi-x-lg"></i></a>
+			<a type="button" class="btn-close" data-bs-dismiss="alert" aria-label="<?php esc_attr_e( 'Close', 'likhun' ); ?>"><i class="bi bi-x-lg"></i></a>
 		</div>
 	<?php endif; ?>
 
@@ -61,7 +63,7 @@
 					<?php endif; ?>
 				</a>
 				
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'likhun' ); ?>">
 					<i class="bi bi-list"></i>
 				</button>
 

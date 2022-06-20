@@ -13,11 +13,11 @@ get_header(); ?>
 			<div class="col-md-8">
 				<?php if( get_theme_mod('main_title') ): ?>
 					<h1 class="page-title">
-						<?php echo wp_kses( get_theme_mod( 'main_title' ), 'allowed_html' ); ?>
+						<?php echo wpautop( likhun_allowed_html( get_theme_mod( 'main_title' ) )); ?>
 					</h1>
 				<?php 
 				endif;
-					if( get_theme_mod('sub_title') ): ?><p><?php echo wp_kses( get_theme_mod('sub_title'), 'allowed_html' ); ?></p>
+					if( get_theme_mod('sub_title') ): ?><p><?php echo wpautop( likhun_allowed_html( get_theme_mod( 'sub_title' ) )); ?></p>
 				<?php endif; ?>
 			</div>
 			<div class="col-md-4 hero-banner">

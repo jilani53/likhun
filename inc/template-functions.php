@@ -52,57 +52,36 @@ if ( !function_exists( 'likhun_count_content_words' ) ):
 endif;
 
 /**
- * HTML tag compatible data validation
+ * Function for Allow HTML Tag
  */
-function likhun_kses_allowed_html( $tags, $context ) {
-	switch( $context ) {
-	  case 'allowed_html': 
-		$tags = array(
-		  'a'      => [
-			  'href'  => [],
-			  'title' => [],
-		  ],
-		  'br'     => [],
-		  'em'     => [],
-		  'strong' => [],
-		  'b' => [],
-		  'span' => [],
-		  'del' => [],
-		);
-		return $tags;
-	  default: 
-		return $tags;
-	}
-}
-add_filter( 'wp_kses_allowed_html', 'likhun_kses_allowed_html', 10, 2 );
-  
-// Remove all script and style type as w3valitator
-function likhun_buffer_start() { 
-	ob_start( 'likhun_callback' ); 
-}
-add_action('wp_loaded', 'likhun_buffer_start');
-  
-function likhun_callback( $buffer ) {
-	return preg_replace( "%[ ]type=[\'\"]text\/(javascript|css)[\'\"]%", ' ', $buffer );
-}
-
-/**
- * Page view count function
- */
-if ( !function_exists( 'likhun_post_view_count_func' ) ):
-    function likhun_post_view_count_func( $post_id ) {
-        $count_key = 'likhun_post_views_count';
-        $count = get_post_meta( $post_id, $count_key, true );
-        if ( $count == '' ) {
-            $count = 0;
-            delete_post_meta( $post_id, $count_key );
-            add_post_meta( $post_id, $count_key, '0' );
-        } else {
-            $count++;
-            update_post_meta( $post_id, $count_key, $count );
-        }
+if ( !function_exists( 'likhun_allowed_html' ) ) {
+    function likhun_allowed_html( $string ) {
+        $allowed_html = [                       
+            'img'    => [
+                'src'   => [],
+                'alt'   => [],
+                'class' => [],
+            ],
+            'a'      => [
+                'href'  => [],
+                'title' => [],
+                'class' => [],
+            ],
+            'i'      => [
+                'class' => [],
+            ],
+            'span'   => [
+                'class' => [],
+            ],
+            'br'     => [],
+            'em'     => [],
+            'strong' => [],
+            'b'      => [],
+            'del'    => [],
+        ];
+        return wp_kses( $string, $allowed_html );
     }
-endif;
+}
 
 /**
  * Related blog function
