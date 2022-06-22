@@ -3,10 +3,9 @@
 Contributors: Jilani Ahmed
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
-Requires at least: 4.5
-Tested up to: 5.4
-Requires PHP: 5.6
-Stable tag: 1.0.0
+Requires at least: 5.0
+Tested up to: 6.0
+Requires PHP: 7.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,7 +30,7 @@ Description
 
 == Credits ==
 
-* Based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+* Based on Underscores https://underscores.me/, [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2018 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
 
 == Copyright ==
@@ -39,6 +38,7 @@ Likhun WordPress theme, Copyright 2022 likhun
 Likhun is distributed under the terms of the GNU GPLv2 or later
 
 == Resources ==
+
 = Libraries =
 
 * Bootstrap, http://getbootstrap.com/
@@ -55,6 +55,52 @@ Likhun is distributed under the terms of the GNU GPLv2 or later
 * imagesLoaded, https://imagesloaded.desandro.com/
 * Copyright © 2022 David DeSandro
 * https://desandro.mit-license.org/
+
+* WP Bootstrap Navwalker, https://github.com/wp-bootstrap/wp-bootstrap-navwalker
+* Edward McIntyre - @twittem, WP Bootstrap, William Patton - @pattonwebz
+* https://www.gnu.org/licenses/gpl-3.0.txt
+
+= Screenshot Images =
+
+* Hero Section
+* License: https://undraw.co/license
+* Source:  https://pxhere.com/en/photo/45145
+
+* Popular Menu Section
+* License: CC0 1.0 Universal (CC0 1.0)
+* Source: https://pxhere.com/en/photo/1611267
+
+* Popular Menu Section
+* License: CC0 1.0 Universal (CC0 1.0)
+* Source: https://pxhere.com/en/photo/1543939
+
+* Popular Menu Section
+* License: CC0 1.0 Universal (CC0 1.0)
+* Source: https://pxhere.com/en/photo/1588799
+
+* Popular Menu Section
+* License: CC0 1.0 Universal (CC0 1.0)
+* Source: https://pxhere.com/en/photo/1175843
+
+* Popular Menu Section
+* License: CC0 1.0 Universal (CC0 1.0)
+* Source: https://pxhere.com/en/photo/1538953
+
+* Popular Menu Section
+* License: CC0 1.0 Universal (CC0 1.0)
+* Source: https://pxhere.com/en/photo/653530
+
+* Popular Menu Section
+* License: CC0 1.0 Universal (CC0 1.0)
+* Source: https://pxhere.com/en/photo/707060
+
+* Popular Menu Section
+* License: CC0 1.0 Universal (CC0 1.0)
+* Source: https://pxhere.com/en/photo/1616841
+
+* Popular Menu Section
+* License: CC0 1.0 Universal (CC0 1.0)
+* Source: https://pxhere.com/en/photo/1617873
 
 = Technology =
 

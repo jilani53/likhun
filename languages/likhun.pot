@@ -10,11 +10,11 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-06-19 07:24+0600\n"
+"POT-Creation-Date: 2022-06-22 09:26+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: Poedit 3.0\n"
 "X-Domain: _s\n"
-"X-Poedit-KeywordsList: __;_e;esc_html__;esc_attr__;_x\n"
+"X-Poedit-KeywordsList: _e;__;_s;esc_html__;esc_attr__\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
 
@@ -76,11 +76,7 @@ msgstr ""
 msgid "Footer Menu"
 msgstr ""
 
-#: functions.php:143
-msgid "on"
-msgstr ""
-
-#: header.php:149
+#: header.php:151
 msgid "Get Started"
 msgstr ""
 
@@ -339,40 +335,40 @@ msgstr ""
 msgid "Copyright text"
 msgstr ""
 
-#: inc/template-functions.php:186 inc/template-functions.php:212
-#: inc/template-functions.php:319 inc/template-functions.php:336
+#: inc/template-functions.php:165 inc/template-functions.php:191
+#: inc/template-functions.php:298 inc/template-functions.php:315
 msgid " min read"
 msgstr ""
 
-#: inc/template-functions.php:231
+#: inc/template-functions.php:210
 msgid "No related post."
 msgstr ""
 
-#: inc/template-functions.php:355
+#: inc/template-functions.php:334
 msgid "No trending post."
 msgstr ""
 
-#: inc/template-functions.php:387
+#: inc/template-functions.php:366
 msgid "Prev"
 msgstr ""
 
-#: inc/template-functions.php:388
+#: inc/template-functions.php:367
 msgid "Next"
 msgstr ""
 
-#: inc/template-functions.php:409
+#: inc/template-functions.php:388
 msgid "Permission denied"
 msgstr ""
 
-#: inc/template-functions.php:416
+#: inc/template-functions.php:395
 msgid "Something is wrong, please try again later ..."
 msgstr ""
 
-#: inc/template-functions.php:435
+#: inc/template-functions.php:414
 msgid "Term doesn't exist"
 msgstr ""
 
-#: inc/template-functions.php:509
+#: inc/template-functions.php:488
 msgid "No posts found"
 msgstr ""
 
@@ -413,11 +409,11 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: single.php:36
+#: single.php:29
 msgid "Previous:"
 msgstr ""
 
-#: single.php:37
+#: single.php:30
 msgid "Next:"
 msgstr ""
 
