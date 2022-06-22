@@ -22,6 +22,10 @@ Description
 
 == Changelog ==
 
+= 1.2 =
+* Fixed language file
+* Licensing issues
+
 = 1.1 =
 * Fixed Data Sanitization/Escaping issues
 
