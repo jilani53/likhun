@@ -12,6 +12,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 == Description ==
 Likhun is a single and multiple niche blog theme with light and dark modes. It is a very lightweight, semantic elements base SEO friendly WordPress blog theme. It has also an ajax category filter with pagination and a very popular post masonry style.
 
+== Demo ==
+https://demo.banyanthemes.com/theme/likhun/
+
 Description
 
 == Installation ==
